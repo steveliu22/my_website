@@ -50,7 +50,6 @@
     font-family: var(--ff-primary);
     font-size: var(--fs-body);
     line-height: 1.6;
-    overflow-x: hidden;
     margin: 0;
   }
 
