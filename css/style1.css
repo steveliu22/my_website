@@ -1,0 +1,272 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --ff-primary: 'Ubuntu', sans-serif;
+  --ff-secondary: 'Source Code Pro', monospace;
+
+  --fw-reg: 300;
+  --fw-bold: 900;
+
+  --clr-light: #fff;
+  --clr-dark: #303030;
+  --clr-accent: #03DAC6;
+
+  --fs-h1: 3rem;
+  --fs-h2: 2.25rem;
+  --fs-h3: 1.25rem;
+  --fs-body: 1rem;
+}
+
+@media (min-height: 400px) {
+  :root {
+    --fs-h1: 4.5rem;
+    --fs-h2: 3.75rem;
+    --fs-h3: 1.5rem;
+    --fs-body: 1.125rem;
+  }
+
+  .nav-link {
+    height: 30rem;
+    width: 30rem;
+  }
+}
+
+
+  body {
+    background: black;
+    color: var(--clr-dark);
+    font-family: var(--ff-primary);
+    font-size: var(--fs-body);
+    line-height: 1.6;
+    overflow-x: hidden;
+    margin: 0;
+  }
+
+  .navbar {
+    width: 4rem;
+    height: 100vh;
+    padding: 0.5rem;
+    position: fixed;
+    background: black;
+    opacity: 90%;
+    transition: width 100ms ease-in;
+  }
+
+  .navbar-nav {
+    list-style: none;
+    padding: 0;
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-link {
+    display: flex;
+    align-items: center;
+    height: 4rem;
+    text-decoration: none;
+    filter: sepia(100%) opacity(50%);
+    transition: 200ms;
+  }
+
+  .nav-link:hover {
+    filter: sepia(0%) opacity(100%);
+  }
+
+  .link-text {
+    display: none;
+  }
+
+  .navbar:hover {
+    width: 8.7rem;
+  }
+
+  .navbar:hover .link-text {
+    font-size: 14px;
+    text-indent: 1rem;
+    color: white;
+    display: block;
+  }
+
+
+  .nav-item {
+    width: 100%;
+    height: 6rem;
+    color: white;
+    padding: 12px 16px;
+    display: block;
+  }
+
+  img {
+    display: block;
+    max-width: 100%;
+  }
+
+  h1,
+  h2,
+  h3 {
+    line-height: 1.1;
+    margin: 0;
+  }
+
+  h1 {
+    font-size: var(--fs-h1)
+  }
+
+  h2 {
+    font-size: var(--fs-h2)
+  }
+
+  h3 {
+    font-size: var(--fs-h3)
+  }
+
+  .section__title--intro {
+    margin: 0;
+    font-size: var(--fs-h2);
+  }
+
+
+  .section__title--intro .dynamic-txts {
+    margin-left: 15px;
+  }
+
+  .dynamic-txts li {
+    color: white;
+    list-style: none;
+    font-size: 30px;
+    font-weight: bold;
+    position: relative;
+    top: 0;
+    height: 4rem;
+  }
+
+  .dynamic-txts li span {
+    position: relative;
+  }
+
+  .dynamic-txts li span::after {
+    content: "";
+    position: absolute;
+    left: -2px;
+    height: 100%;
+    width: 100%;
+    background: black;
+    white-space: nowrap;
+    animation: typing 3s steps(50) 1;
+    animation-fill-mode: forwards;
+  }
+
+  @keyframes typing {
+    100% {
+      left: 100%;
+      margin: 0 0 0 35px;
+    }
+  }
+
+  .wrapper {
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .typing-demo {
+    width: 22ch;
+    animation: typing2 1.5s steps(22), blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    font-family: monospace;
+    font-size: 2em;
+  }
+
+  @keyframes typing2 {
+    from {
+      width: 0
+    }
+  }
+
+  @keyframes blink {
+    50% {
+      border-color: transparent
+    }
+  }
+
+  .github {
+    display: block;
+    width: 20%;
+    color: darkgray;
+    transition: color 1s;
+  }
+
+  .github:hover {
+    color: white;
+  }
+
+  .linkedin {
+    display: block;
+    width: 20%;
+    color: #0e76a8;
+    transition: color 1s;
+  }
+
+  .linkedin:hover {
+    color: white;
+  }
+
+  .email {
+    display: block;
+    width: 20%;
+    color: #0072C6;
+    transition: color 1s;
+  }
+
+  .email:hover {
+    color: white;
+  }
+
+  .insta {
+    display: block;
+    width: 20%;
+    color: rebeccapurple;
+    transition: color 1s;
+  }
+
+  .insta:hover {
+    color: white;
+  }
+
+  .resume {
+    display: block;
+    width: 20%;
+    color: darkcyan;
+    transition: color 1s;
+  }
+
+  .resume:hover {
+    color: white;
+  }
+
+  .github, .linkedin, .email, .insta, .resume {
+    float: left;
+  }
+
+  .links {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 10vh;
+  }
+
+  ion-icon {
+    pointer-events: none;
+  }
+
+
