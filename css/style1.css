@@ -170,6 +170,10 @@
     font-family: monospace;
     animation: typing 3s steps(50) 1;
     animation-fill-mode: forwards;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 10vh;
   }
 
   @keyframes typing {
@@ -181,8 +185,12 @@
 
   .wrapper {
     height: 30vh;
-    display: inline-block;
     position: fixed;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 10vh;
   }
 
   .typing-demo {
@@ -194,6 +202,11 @@
     font-family: monospace;
     font-size: 3rem;
     position: absolute;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 10vh;
   }
 
   @keyframes typing2 {
