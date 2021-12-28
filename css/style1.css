@@ -4,6 +4,14 @@
   box-sizing: border-box;
 }
 
+@viewport {
+  width: 100%;
+  zoom: 1.0 ;
+}
+@-ms-viewport {
+  width: 100%;
+}
+
 :root {
   --ff-primary: 'Ubuntu', sans-serif;
   --ff-secondary: 'Source Code Pro', monospace;
@@ -171,9 +179,8 @@
 
   .wrapper {
     height: 30vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: inline-block;
+    position: fixed;
   }
 
   .typing-demo {
@@ -184,6 +191,7 @@
     border-right: 3px solid;
     font-family: monospace;
     font-size: 2em;
+    position: absolute;
   }
 
   @keyframes typing2 {
