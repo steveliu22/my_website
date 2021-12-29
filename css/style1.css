@@ -148,7 +148,7 @@
     color: white;
     list-style: none;
     font-family: monospace;
-    font-size: 2rem;
+    font-size: 50%;
     font-weight: bold;
     position: relative;
     top: 0;
@@ -173,7 +173,7 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    min-height: 10vh;
+    min-height: 30%;
   }
 
   @keyframes typing {
