@@ -8,6 +8,7 @@
   width: 100%;
   zoom: 1.0 ;
 }
+
 @-ms-viewport {
   width: 100%;
 }
@@ -43,254 +44,254 @@
   }
 }
 
-  body {
-    background: black;
-    color: var(--clr-dark);
-    font-family: var(--ff-primary);
-    font-size: var(--fs-body);
-    line-height: 1.6;
-    margin: 0;
-    overflow-x: hidden;
+body {
+  background: black;
+  color: var(--clr-dark);
+  font-family: var(--ff-primary);
+  font-size: var(--fs-body);
+  line-height: 1.6;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+.navbar {
+  width: 4rem;
+  height: 100vh;
+  padding: 0.5rem;
+  position: fixed;
+  background: black;
+  opacity: 90%;
+  transition: width 100ms ease-in;
+}
+
+.navbar-nav {
+  list-style: none;
+  padding: 0;
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.nav-link {
+  display: flex;
+  align-items: center;
+  height: 4rem;
+  text-decoration: none;
+  filter: sepia(100%) opacity(50%);
+  transition: 200ms;
+}
+
+.nav-link:hover {
+  filter: sepia(0%) opacity(100%);
+}
+
+.link-text {
+  display: none;
+}
+
+.navbar:hover {
+  width: 8.7rem;
+}
+
+.navbar:hover .link-text {
+  font-size: 14px;
+  text-indent: 1rem;
+  color: white;
+  display: block;
+}
+
+
+.nav-item {
+  width: 100%;
+  height: 6rem;
+  color: white;
+  padding: 12px 16px;
+  display: block;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1.1;
+  margin: 0;
+}
+
+h1 {
+  font-size: var(--fs-h1)
+}
+
+h2 {
+  font-size: var(--fs-h2)
+}
+
+h3 {
+  font-size: var(--fs-h3)
+}
+
+.section__title--intro {
+  margin: 0;
+  font-size: var(--fs-h2);
+}
+
+
+.section__title--intro .dynamic-txts {
+  margin-left: 15px;
+}
+
+.dynamic-txts li {
+  color: white;
+  list-style: none;
+  font-family: monospace;
+  font-size: 50%;
+  font-weight: bold;
+  position: relative;
+  top: 0;
+  height: 6vh;
+}
+
+.dynamic-txts li span {
+  position: relative;
+}
+
+.dynamic-txts li span::after {
+  content: "";
+  position: absolute;
+  left: -2px;
+  height: 10ch;
+  width: 42ch;
+  background: black;
+  white-space: nowrap;
+  font-family: monospace;
+  animation: typing 3s steps(50) 1;
+  animation-fill-mode: forwards;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 30%;
+}
+
+@keyframes typing {
+  100% {
+    left: 100%;
+    margin: 0 0 0 1px;
   }
+}
 
-  .navbar {
-    width: 4rem;
-    height: 100vh;
-    padding: 0.5rem;
-    position: fixed;
-    background: black;
-    opacity: 90%;
-    transition: width 100ms ease-in;
+.wrapper {
+  height: 25vh;
+  position: fixed;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 10vh;
+}
+
+.typing-demo {
+  width: 22ch;
+  animation: typing2 1.5s steps(22), blink .5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 1px solid;
+  font-family: monospace;
+  position: absolute;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 30%;
+  font-size: 100%;
+}
+
+@keyframes typing2 {
+  from {
+    width: 0;
+    height: 20%;
   }
+}
 
-  .navbar-nav {
-    list-style: none;
-    padding: 0;
-    margin-top: 5rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+@keyframes blink {
+  50% {
+    border-color: transparent
   }
+}
 
-  .nav-link {
-    display: flex;
-    align-items: center;
-    height: 4rem;
-    text-decoration: none;
-    filter: sepia(100%) opacity(50%);
-    transition: 200ms;
-  }
+.github {
+  display: block;
+  width: 20%;
+  color: darkgray;
+  transition: color 1s;
+}
 
-  .nav-link:hover {
-    filter: sepia(0%) opacity(100%);
-  }
+.github:hover {
+  color: white;
+}
 
-  .link-text {
-    display: none;
-  }
+.linkedin {
+  display: block;
+  width: 20%;
+  color: #0e76a8;
+  transition: color 1s;
+}
 
-  .navbar:hover {
-    width: 8.7rem;
-  }
+.linkedin:hover {
+  color: white;
+}
 
-  .navbar:hover .link-text {
-    font-size: 14px;
-    text-indent: 1rem;
-    color: white;
-    display: block;
-  }
+.email {
+  display: block;
+  width: 20%;
+  color: #0072C6;
+  transition: color 1s;
+}
 
+.email:hover {
+  color: white;
+}
 
-  .nav-item {
-    width: 100%;
-    height: 6rem;
-    color: white;
-    padding: 12px 16px;
-    display: block;
-  }
+.insta {
+  display: block;
+  width: 20%;
+  color: rebeccapurple;
+  transition: color 1s;
+}
 
-  img {
-    display: block;
-    max-width: 100%;
-  }
+.insta:hover {
+  color: white;
+}
 
-  h1,
-  h2,
-  h3 {
-    line-height: 1.1;
-    margin: 0;
-  }
+.resume {
+  display: block;
+  width: 20%;
+  color: darkcyan;
+  transition: color 1s;
+}
 
-  h1 {
-    font-size: var(--fs-h1)
-  }
+.resume:hover {
+  color: white;
+}
 
-  h2 {
-    font-size: var(--fs-h2)
-  }
+.github, .linkedin, .email, .insta, .resume {
+  float: left;
+}
 
-  h3 {
-    font-size: var(--fs-h3)
-  }
+.links {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 10vh;
+}
 
-  .section__title--intro {
-    margin: 0;
-    font-size: var(--fs-h2);
-  }
-
-
-  .section__title--intro .dynamic-txts {
-    margin-left: 15px;
-  }
-
-  .dynamic-txts li {
-    color: white;
-    list-style: none;
-    font-family: monospace;
-    font-size: 50%;
-    font-weight: bold;
-    position: relative;
-    top: 0;
-    height: 6vh;
-  }
-
-  .dynamic-txts li span {
-    position: relative;
-  }
-
-  .dynamic-txts li span::after {
-    content: "";
-    position: absolute;
-    left: -2px;
-    height: 10ch;
-    width: 42ch;
-    background: black;
-    white-space: nowrap;
-    font-family: monospace;
-    animation: typing 3s steps(50) 1;
-    animation-fill-mode: forwards;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    min-height: 30%;
-  }
-
-  @keyframes typing {
-    100% {
-      left: 100%;
-      margin: 0 0 0 1px;
-    }
-  }
-
-  .wrapper {
-    height: 25vh;
-    position: fixed;
-    display: block;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    min-height: 10vh;
-  }
-
-  .typing-demo {
-    width: 22ch;
-    animation: typing2 1.5s steps(22), blink .5s step-end infinite alternate;
-    white-space: nowrap;
-    overflow: hidden;
-    border-right: 1px solid;
-    font-family: monospace;
-    position: absolute;
-    display: block;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    min-height: 30%;
-    font-size: 100%;
-  }
-
-  @keyframes typing2 {
-    from {
-      width: 0;
-      height: 20%;
-    }
-  }
-
-  @keyframes blink {
-    50% {
-      border-color: transparent
-    }
-  }
-
-  .github {
-    display: block;
-    width: 20%;
-    color: darkgray;
-    transition: color 1s;
-  }
-
-  .github:hover {
-    color: white;
-  }
-
-  .linkedin {
-    display: block;
-    width: 20%;
-    color: #0e76a8;
-    transition: color 1s;
-  }
-
-  .linkedin:hover {
-    color: white;
-  }
-
-  .email {
-    display: block;
-    width: 20%;
-    color: #0072C6;
-    transition: color 1s;
-  }
-
-  .email:hover {
-    color: white;
-  }
-
-  .insta {
-    display: block;
-    width: 20%;
-    color: rebeccapurple;
-    transition: color 1s;
-  }
-
-  .insta:hover {
-    color: white;
-  }
-
-  .resume {
-    display: block;
-    width: 20%;
-    color: darkcyan;
-    transition: color 1s;
-  }
-
-  .resume:hover {
-    color: white;
-  }
-
-  .github, .linkedin, .email, .insta, .resume {
-    float: left;
-  }
-
-  .links {
-    display: block;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    min-height: 10vh;
-  }
-
-  ion-icon {
-    pointer-events: none;
-  }
+ion-icon {
+  pointer-events: none;
+}
 
 @media (max-width: 500px) and (max-height: 500px) {
   .dynamic-txts li {
@@ -306,31 +307,34 @@
   }
 }
 
-@media (max-width: 1200px) and (max-height: 1000px) {
-  @media (max-width: 480px) and (max-height: 500px) {
-    .dynamic-txts li {
-      font-size: 20%;
-      height: 6vh;
-      right: 10%;
-    }
-
-    .typing-demo {
-      width: 22ch;
-      animation: typing2 1.5s steps(22), blink .5s step-end infinite alternate;
-      white-space: nowrap;
-      overflow: hidden;
-      border-right: 1px solid;
-      font-family: monospace;
-      position: absolute;
-      display: block;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      min-height: 10%;
-      font-size: 30%;
-      left: -5%;
-    }
+@media (max-width: 480px) and (max-height: 500px) {
+  .dynamic-txts li {
+    font-size: 20%;
+    height: 6vh;
+    right: 10%;
   }
+
+  .typing-demo {
+    width: 22ch;
+    animation: typing2 1.5s steps(22), blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 1px solid;
+    font-family: monospace;
+    position: absolute;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 10%;
+    font-size: 30%;
+    left: -5%;
+  }
+}
+
+@media (max-width: 1200px) and (max-height: 1000px) {
+
+
   .dynamic-txts li {
     font-size: 40%;
     height: 6vh;
