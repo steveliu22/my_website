@@ -293,7 +293,7 @@ ion-icon {
   pointer-events: none;
 }
 
-@media (max-width: 500px) and (max-height: 500px) {
+@media (max-width: 400px) and (max-height: 1024px) {
   .dynamic-txts li {
     font-size: 20%;
     height: 10px;
