@@ -332,11 +332,11 @@ ion-icon {
   }
 }
 
-@media (max-width: 1200px) and (max-height: 1000px) {
+@media only screen and (max-width: 1025px) and (max-height: 1000px) {
 
   .dynamic-txts li {
-    font-size: 40%;
-    height: 6vh;
+    font-size: 20%;
+    height: 4vh;
     right: 10%;
   }
 
@@ -353,8 +353,18 @@ ion-icon {
     align-items: center;
     text-align: center;
     min-height: 10%;
-    font-size: 60%;
-    left: -5%;
+    font-size: 30%;
+    left: -3%;
+  }
+
+  .wrapper {
+    height: 10vh;
+    position: fixed;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 5vh;
   }
 
 }
