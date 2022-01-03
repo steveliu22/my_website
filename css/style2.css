@@ -151,5 +151,60 @@
     pointer-events: none;
   }
 
+  .github {
+
+    width: 20%;
+    color: darkgray;
+    transition: color 1s;
+  }
+
+  .github:hover {
+    color: white;
+  }
+
+  .linkedin {
+
+    width: 20%;
+    color: #0e76a8;
+    transition: color 1s;
+  }
+
+  .linkedin:hover {
+    color: white;
+  }
+
+  .email {
+
+    width: 20%;
+    color: #0072C6;
+    transition: color 1s;
+  }
+
+  .email:hover {
+    color: white;
+  }
+
+  .insta {
+
+    width: 20%;
+    color: rebeccapurple;
+    transition: color 1s;
+  }
+
+  .insta:hover {
+    color: white;
+  }
+
+  .resume {
+
+    width: 20%;
+    color: darkcyan;
+    transition: color 1s;
+  }
+
+  .resume:hover {
+    color: white;
+  }
+
 
 }
