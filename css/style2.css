@@ -62,7 +62,7 @@
   .nav-link {
     display: flex;
     align-items: center;
-    height: 4rem;
+    height: 2rem;
     text-decoration: none;
     filter: sepia(100%) opacity(50%);
     transition: 200ms;
